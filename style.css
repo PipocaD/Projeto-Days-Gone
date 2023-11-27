@@ -24,9 +24,9 @@ html, body {
     font-family: var(--font3);
 }
 header {
-    min-height: 150px;
+    min-height: 200px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 20px;
     background-image: url(imagens/header.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -37,16 +37,16 @@ main {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.466);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: white;   
+    background-color: white; 
 }
 main h2 {
     font-family: var(--font1);
     color: var(--cor2);
     font-weight: normal;
-    font-size: 4em;
+    font-size: 2em;
 }
 main p {
     margin: 15px 0px;
@@ -79,35 +79,21 @@ div.video > iframe {
        width: 90%;
        height: 90%;
 }
-section.personagem {
-    background-color:rgb(92, 89, 89);
+aside {
+    background-color: #a7a3a3;
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > h2 {
+    background-color: var(--cor3);
     color: white;
-    box-shadow: inset 6x 6px 13px 0px black;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: var(--font2);
-}
-section.personagem > p {
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.219);
-    display: inline-block;
-    text-shadow: 1px 1px 0px black;
-}
-section#deacon {
-    background-image: url(./imagens/personagens/Deacon\ St.\ John.jpg);
-    background-position: right center;
-}
-section#willian {
-    background-image: url(./imagens/personagens/Boozer.jpg);
-}
-section#sarah {
-    background-image: url(./imagens/personagens/Sarah\ Whitaker.png);
-}
-section#james {
-    background-image: url(./imagens/personagens/James\ OBrian.jpg);
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.266);
 }
 ul {
-    list-style-type: '\0020\0020\0020';
+    list-style-type:'\0020\0020\0020';
     columns: 2;
     list-style-position: inside;
 }
@@ -119,7 +105,9 @@ footer {
     background-size: 100%;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 15px;
+    font-family: var(--font3);
+    font-size: 1.3em;
 }
 footer a {
     color: white;
@@ -128,5 +116,5 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
-    color: var(--cor0);
+    color: var(--cor2);
 }
