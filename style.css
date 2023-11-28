@@ -33,7 +33,7 @@ header {
     background-size: 100%;
 }
 main {
-    min-width: 400px;
+    min-width: 200px;
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -86,10 +86,8 @@ section.personagem {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 1em;
-    border: 1px solid var(--cor2);
-}
-section.personagem {
-    background-color: var(--cor2);
+    border: 1px solid var(--cor3);
+    border-radius: 2px;
     color: white;
     box-shadow: inset 6x 6px 13px 0px black;
     background-size: 100%;
@@ -99,25 +97,94 @@ section.personagem {
 }
 section.personagem > p {
     padding: 5px;
-    background-color: #45454563;
+    background-color: #45454550;
     display: inline-block;
     text-shadow: 1px 1px 0px black;
     border-radius: 15px;
 }
 section#deacon {
     background-image: url(./imagens/personagens/Deacon\ St.\ John.jpg);
+    background-position: left top;
 }
 section#willian {
     background-image: url(./imagens/personagens/Boozer.jpg);
+    background-position: left top;
 }
 section#sarah {
     background-image: url(./imagens/personagens/Sarah\ Whitaker.png);
+    background-position: left top;
 }
 section#james {
     background-image: url(./imagens/personagens/James\ OBrian.jpg);
+    background-position: center center;
 }
 
 
+
+
+
+
+
+
+
+.content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 1.6em;
+    padding-left: 30px;
+
+
+
+
+    
+}
+.navagation {
+    display: flex;
+}
+.bar {
+    width: 30px;
+    height: 13px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 4px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover {
+    background-color: white;
+}
+
+input {
+    display: none;
+}
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide {
+    width: 20%;
+    transition: .3s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1 {
+    margin: 0;
+}
+#slide2:checked ~ .s1 {
+    margin: -10%;
+}
+#slide3:checked ~ .s1 {
+    margin: -20%;
+}
+#slide4:checked ~ .s1 {
+    margin: -30%;
+}
+#slide5:checked ~ .s1 {
+    margin: -40%;
+}
 
 
 
