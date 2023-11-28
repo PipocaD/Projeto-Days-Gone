@@ -5,6 +5,16 @@
     src: url(./fontes/BAD\ GRUNGE.ttf) format('opentype');
     font-weight: normal;
 }
+@font-face {
+    font-family: 'motiva';
+    src: url(./fontes/MotivaSansMedium.woff.ttf) format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'alinore';
+    src: url(./fontes/Alinore.otf) format('opentype');
+    font-weight: normal;
+}
 
 :root {
     --cor0: #454545;
@@ -13,72 +23,6 @@
     --cor3: #111111;
     --cor4: #000000;
     --font1: 'BAD-GRUNGE';
-}
-
-* {
-margin: 0; 
-padding: 0;}
-
-body {
-    background-color: var(--cor-1);
-}
-
-header {
-    min-height: 200px;
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-image: url(/imagens/header.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: var(--cor0);
-}
-
-#burgue {
-    background-color: var(--cor1);
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-#burgue:hover {
-    color:var(--cor4);
-    transition: .5s;
-}
-
-.menu {
-   font-family: var(--font4); 
-   text-align: center;
-}
-.menu > ul {
-    list-style-type: none;
-}
-menu > ul > li > a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    background-color: var(--cor2);
-    color: white;
-}
-menu > ul > li > a:hover {
-    background-color: var(--cor1);
-    color: var(--cor3);
-    transition: .2s;
-}
-
-main {
-    width: 90vw;
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-}
-main > h1 {
-    padding-bottom: 20px;
-}
-article {
-    text-align: justify;
-    margin-bottom: 10px;
+    --font2: 'motiva';
+    --font3: 'alinore'; 
 }
