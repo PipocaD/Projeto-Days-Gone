@@ -1,28 +1,58 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@font-face {
-    font-family: 'BAD-GRUNGE';
-    src: url(./fontes/BAD\ GRUNGE.ttf) format('opentype');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'motiva';
-    src: url(./fontes/MotivaSansMedium.woff.ttf) format('opentype');
-    font-weight: normal;
-}
+
 @font-face {
     font-family: 'alinore';
     src: url(./fontes/Alinore.otf) format('opentype');
     font-weight: normal;
 }
+@font-face {
+    font-family: 'SST';
+    src: url(./fontes/SST\ W20\ Medium.ttf) format('opentype');
+    font-weight: normal;
+}
 
 :root {
-    --cor0: #454545;
+    --cor00: white;
+    --cor0: #c4c4c4;
     --cor1: #343434;
     --cor2: #232323;
     --cor3: #111111;
     --cor4: #000000;
-    --font1: 'BAD-GRUNGE';
-    --font2: 'motiva';
-    --font3: 'alinore'; 
+    --font1: 'SST';
+    --font2: 'alinore';
 }
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: var(--font1); 
+    color: var(--cor3);
+}
+
+h3 {
+    font-family: var(--font2);
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
