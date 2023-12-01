@@ -11,35 +11,132 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'JMH';
+    src: url(./fontes/JMH\ Typewriter-Thin.ttf) format(opentype);
+    font-weight: normal;
+}
+
 :root {
-    --cor00: white;
-    --cor0: #c4c4c4;
-    --cor1: #343434;
-    --cor2: #232323;
-    --cor3: #111111;
-    --cor4: #000000;
+    --cor0: white;
+    --cor1: #c4c4c4;
+    --cor2: #343434;
+    --cor3: #212121;
+    --cor4: #111111;
+    --cor5: #000000;
     --font1: 'SST';
     --font2: 'alinore';
+    --font3: 'JMH'
+}
+ * {
+margin: 0px;
+padding: 0px;
+}
+body, html {
+background-color: var(--cor0);
+}
+header {
+background-color: var(--cor3);
+}
+menu {
+display: block;
+}
+menu li {
+display: block;
+}
+menu a {
+display: block;
+font-family: var(--font2);
+text-decoration: none;
+text-align: left;
+font-size: 1.5em;
+color: var(--cor1);
+}
+menu a:hover {
+background-color: var(--cor4);
+color: var(--cor0);
+transition: .3s;
+text-decoration: underline;
 }
 
-body {
-    margin: 0;
-    padding: 0; 
-    font-family: var(--font1); 
-    color: var(--cor3);
+main {
+    width: 90vw;
+    background-color: var(--cor0);
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article h1 {
+    padding-bottom: 20px;
+}
+article p {
+    padding: 10px;
 }
 
+.classificação {
+    max-width: 250px;
+    background-color: var(--cor3);
+    color: var(--cor0);
+    font-family: var(--font3);
+    padding: 10px;
+    border: var(--cor5);
+    border-radius: 5px;
+    display: block;
+    box-shadow: 1px 0px 0px 1px var(--cor4);
+    font-family: var(--font1);
+    font-variant: small-caps;
+}
+
+.empresas {
+    padding: 15px;
+}
+div li {
+    list-style-type: none;
+    text-align: center;
+    font-family: var(--font1);
+}
+div a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+div a:hover {
+    color: var(--cor5);
+    text-decoration: underline;
+    transition: .3s;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-size: 30px;
+}
 h3 {
     font-family: var(--font2);
-    font-size: 2em;
+    font-size: 35px;
+}
+p {
+    font-family: var(--font3);
+    font-size: 18px;
+    font-variant: small-caps;
 }
 
-
-
-
-
-
-
+div.trailer {
+    background-image: url(./imagens/game/img01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.trailer > iframe {
+       position: absolute;
+       top: 5%;
+       left: 5%;
+       width: 90%;
+       height: 90%;
+}
 
 
 
