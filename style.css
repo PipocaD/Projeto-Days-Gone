@@ -67,7 +67,6 @@ transition: .3s;
 text-decoration: underline;
 }
 
-
 .capaDG {
     max-width: 80vw;
     padding-top: 5px;
@@ -76,10 +75,8 @@ text-decoration: underline;
 }
 
 
-
-
 main {
-    width: 81vw;
+    width: 90vw;
     background-color: var(--cor0);
     margin: auto;
     margin-top: 10px;
@@ -167,18 +164,9 @@ width: 90%;
 height: 90%;
 }
 
-
-.chars {
-    display: block;
-    align-items: center;
-}
-.chars img {
-    width: 200px;
-
-    position: relative;
+#char {
     
 }
-
 
 
 
