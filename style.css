@@ -11,12 +11,6 @@
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'JMH';
-    src: url(./fontes/JMH\ Typewriter-Thin.ttf) format(opentype);
-    font-weight: normal;
-}
-
 :root {
     --cor0: white;
     --cor1: #c4c4c4;
@@ -26,7 +20,6 @@
     --cor5: #000000;
     --font1: 'SST';
     --font2: 'alinore';
-    --font3: 'JMH'
 }
  * {
 margin: 0px;
@@ -46,12 +39,12 @@ background-color: var(--cor3);
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    transition: .3s;
 }
 #burgue:hover {
     background-color: var(--cor1);
     color: var(--cor3);
     display: block;
-    transition: .3s;
 }
 
 menu {
@@ -64,16 +57,26 @@ menu a {
 display: block;
 font-family: var(--font2);
 text-decoration: none;
-text-align: left;
+text-align: center;
 font-size: 1.5em;
 color: var(--cor1);
 }
 menu a:hover {
-background-color: var(--cor4);
 color: var(--cor0);
 transition: .3s;
 text-decoration: underline;
 }
+
+
+.capaDG {
+    max-width: 80vw;
+    padding-top: 5px;
+    position: relative;
+    left: 10%;
+}
+
+
+
 
 main {
     width: 81vw;
@@ -98,6 +101,7 @@ background-color: var(--cor3);
 color: var(--cor0);
 font-family: var(--font3);
 padding: 10px;
+margin-top: 20px;
 border: var(--cor5);
 border-radius: 10px;
 display: block;
@@ -126,19 +130,23 @@ h1 {
 font-family: var(--font1);
 font-size: 30px;
 }
+h2 {
+font-variant: small-caps;
+text-align: justify;
+font-size: 25px;
+}
 h3 {
 font-family: var(--font2);
 font-size: 35px;
 }
 p {
-font-family: var(--font3);
 font-size: 18px;
 font-variant: small-caps;
 text-indent: 10px;
 text-align: justify;
 }
 li {
-    list-style-type: none;
+list-style-type: none;
 }
 
 div.trailer {
@@ -151,7 +159,6 @@ padding: 20px;
 padding-bottom: 57%;
 position: relative;
 }
-
 div.trailer > iframe {
 position: absolute;
 top: 5%;
@@ -160,8 +167,16 @@ width: 90%;
 height: 90%;
 }
 
-div.char {
-    max-width: 200px;
+
+.chars {
+    display: block;
+    align-items: center;
+}
+.chars img {
+    width: 200px;
+
+    position: relative;
+    
 }
 
 
@@ -177,3 +192,59 @@ div.char {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > h2 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 4px var(--cor4);
+    font-variant: small-caps;
+    text-align: justify;
+}
+aside > ul {
+padding: 10px;
+list-style-type: none;
+columns: 2;
+list-style-position: inside; 
+font-variant: small-caps;
+text-align: justify; 
+}
+footer {
+    background-color: var(--cor0);
+}
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+footer h2 {
+    text-align: center;
+}
