@@ -39,8 +39,6 @@ header {
 background-color: var(--cor3);
 }
 
-
-
 #burgue {
     background-color: var(--cor2);
     color: var(--cor0);
@@ -55,10 +53,6 @@ background-color: var(--cor3);
     display: block;
     transition: .3s;
 }
-
-
-
-
 
 menu {
 display: none;
